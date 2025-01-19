@@ -1,16 +1,19 @@
-import logo from '../images/logo.png';
-
 const Reservation = () => {
     return (
-        <div className="p-5">
-            <div className="card mx-auto" style={{width: "400px"}}>
-                <div className="card-body">
-                    <div className="mb-8 text-center">
-                        <img src={logo} alt="Logo" width="100" height="100" className="bi"/>
-                        <h5 className="card-title">Make A Reservation Today</h5>
-                    </div>
-                    <form className="row g-3">
-                        <div className="form-floating col-md-6">
+        <div className="reservation_6">
+            <div className="responsive-container-block container">
+                <form className="form-box">
+                    <div className="container-block form-wrapper">
+                        <div className="mob-text">
+                            <p className="text-blk contactus-head">
+                                Make A Reservation Today
+                            </p>
+                            <p className="text-blk contactus-subhead">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis diam lectus sapien.
+                            </p>
+                        </div>
+
+                        <div className="form-floating col-12">
                             <input type="text" className="form-control" id="first-name" placeholder="First Name"/>
                             <label htmlFor="first-name" className="ms-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-person" viewBox="0 0 16 16">
@@ -20,7 +23,9 @@ const Reservation = () => {
                             </label>
                         </div>
 
-                        <div className="form-floating col-md-6">
+                        <br/>
+
+                        <div className="form-floating col-12">
                             <input type="text" className="form-control" id="last-name" placeholder="Last Name"/>
                             <label htmlFor="last-name" className="ms-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-person-fill" viewBox="0 0 16 16">
@@ -30,6 +35,8 @@ const Reservation = () => {
                             </label>
                         </div> 
 
+                        <br/>
+            
                         <div className="form-floating col-12">
                             <input type="email" className="form-control" id="Email" placeholder='name@example.com'/>
                             <label htmlFor="Email" className="ms-1">
@@ -40,6 +47,8 @@ const Reservation = () => {
                             </label>
                         </div>
 
+                        <br/>
+            
                         <div className="form-floating col-12">
                             <input type="text" className="form-control" id="telephone" placeholder="Telephone Number"/>
                             <label htmlFor="Telephone" className="ms-1">
@@ -50,7 +59,9 @@ const Reservation = () => {
                             </label>
                         </div>
 
-                        <div className="form-floating col-md-6">
+                        <br/> 
+
+                        <div className="form-floating col-12">
                             <input type="date" className="form-control" id='date-of-resveration'/>
                             <label htmlFor="date" className="ms-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-calendar" viewBox="0 0 16 16">
@@ -60,7 +71,9 @@ const Reservation = () => {
                             </label>
                         </div>
 
-                        <div className="form-floating col-md-6">
+                        <br/>
+
+                        <div className="form-floating col-12">
                             <input type="time" className="form-control" id="time-of-resveration"/>
                             <label htmlFor="Time" className="ms-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-alarm" viewBox="0 0 16 16">
@@ -70,6 +83,8 @@ const Reservation = () => {
                                 Time For Reservation
                             </label>
                         </div>
+
+                        <br/>
 
                         <div className="form-floating col-12">
                             <input type="number" className="form-control" id="num-guest" placeholder='num-guest'/>
@@ -81,6 +96,8 @@ const Reservation = () => {
                             </label>
                         </div>
 
+                        <br/>
+
                         <div className="form-floating col-12">
                             <input type="text" className="form-control" id="text" placeholder='special-request'/>
                             <label htmlFor="text" className="ms-1">
@@ -91,9 +108,11 @@ const Reservation = () => {
                             </label>
                         </div>
 
-                        <button type="submit" className="btn btn-primary w-100 my-2">Make A Reservation</button>
-                    </form>
-                </div>
+                        <br/>
+
+                        <div className="text-center"><button className="reservation-btn btn mx-auto">Reserve Now</button></div>
+                    </div>
+                </form> 
             </div>
         </div>
     );

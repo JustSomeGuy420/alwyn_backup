@@ -1,201 +1,135 @@
-import logo from '../images/logo.png';
-
 const Checkout = () => {
     return (
-        <div className="container">
-            <div className="py-5 text-center">
-                <img className="d-block mx-auto mb-4" src={logo} alt="" width="96" height="96"/>
-                <h2>Checkout</h2>
+        <>
+            <div className="checkout-title text-center">
+                <p><i className="fa-solid fa-cart-shopping fa-xl" style={{color: "#000000"}}></i> Checkout</p>
             </div>
-
-            <div className="row">
-                <div className="col-md-4 order-md-2 mb-4">
-                    <h4 className="d-flex justify-content-between align-items-center mb-3">
-                        <span className="text-muted">Your cart</span>
-                        <span className="badge text-bg-secondary rounded-pill">3</span>
-                    </h4>
-                    <ul className="list-group mb-3">
-                        <li className="list-group-item d-flex justify-content-between lh-condensed">
-                            <div>
-                                <h6 className="my-0">Product name</h6>
-                                <small className="text-muted">Brief description</small>
-                            </div>
-                            <span className="text-muted">$12</span>
-                        </li>
-                        <li className="list-group-item d-flex justify-content-between lh-condensed">
-                            <div>
-                                <h6 className="my-0">Second product</h6>
-                                <small className="text-muted">Brief description</small>
-                            </div>
-                            <span className="text-muted">$8</span>
-                        </li>
-                        <li className="list-group-item d-flex justify-content-between lh-condensed">
-                            <div>
-                                <h6 className="my-0">Third item</h6>
-                                <small className="text-muted">Brief description</small>
-                            </div>
-                            <span className="text-muted">$5</span>
-                        </li>
-                        <li className="list-group-item d-flex justify-content-between bg-light">
-                            <div className="text-success">
-                                <h6 className="my-0">Promo code</h6>
-                                <small>EXAMPLECODE</small>
-                            </div>
-                            <span className="text-success">-$5</span>
-                        </li>
-                        <li className="list-group-item d-flex justify-content-between">
-                            <span>Total (USD)</span>
-                            <strong>$20</strong>
-                        </li>
-                    </ul>
-
-                    <form className="card p-2">
-                        <div className="input-group">
-                            <input type="text" className="form-control" placeholder="Promo code"/>
-                            <div className="input-group-append">
-                                <button type="submit" className="btn btn-secondary">Redeem</button>
-                            </div>
+            <div className="checkout-container container d-lg-flex">
+                <div className="box-1 user">
+                    <div className="box-inner-1 pb-3 mb-3 ">
+                        <div className="d-flex justify-content-between mb-3 userdetails">
+                            <p className="fw-bold">Sub-Total</p>
+                            <p className="fw-lighter"><span className="fas fa-dollar-sign"></span>3000.00+</p>
                         </div>
-                    </form>
+                        
+                        <div className="radiobtn">
+                            <input type="checkbox" name="box" id="one" style={{display: "none"}}/>
+                            <input type="checkbox" name="box" id="two" style={{display: "none"}}/>
+                            <input type="checkbox" name="box" id="three" style={{display: "none"}}/>
+                            <label htmlFor="one" className="box py-2 first">
+                                <div className="d-flex align-items-start">
+                                    <span className="circle"></span>
+                                    <div className="course">
+                                        <div className="d-flex align-items-center justify-content-between mb-2">
+                                            <span className="fw-bold">
+                                                Food Item
+                                            </span>
+                                            <span className="fas fa-dollar-sign">1000.00</span>
+                                        </div>
+                                        <span>Brief Description</span>
+                                    </div>
+                                </div>
+                            </label>
+                            <label htmlFor="two" className="box py-2 second">
+                                <div className="d-flex">
+                                    <span className="circle"></span>
+                                    <div className="course">
+                                        <div className="d-flex align-items-center justify-content-between mb-2">
+                                            <span className="fw-bold">
+                                                Food Item
+                                            </span>
+                                            <span className="fas fa-dollar-sign">1300.00</span>
+                                        </div>
+                                        <span>Brief Description</span>
+                                    </div>
+                                </div>
+                            </label>
+                            <label htmlFor="three" className="box py-2 third">
+                                <div className="d-flex">
+                                    <span className="circle"></span>
+                                    <div className="course">
+                                        <div className="d-flex align-items-center justify-content-between mb-2">
+                                            <span className="fw-bold">
+                                                Food Item
+                                            </span>
+                                            <span className="fas fa-dollar-sign">700.00</span>
+                                        </div>
+                                        <span>Brief Description</span>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
                 </div>
-
-
-                <div id="billing-address" className="col-md-8 order-md-1">
-                    <h4 className="mb-3">Billing address</h4>
-                    <form className="needs-validation" noValidate="">
-                        <div className="row">
-                            <div className="col-md-6 mb-3">
-                                <label htmlFor="firstName">First name</label>
-                                <input type="text" className="form-control" id="firstName" placeholder="John" value="" required=""/>
-                                <div className="invalid-feedback">
-                                    Valid first name is required.
-                                </div>
-                            </div>
-                            <div className="col-md-6 mb-3">
-                                <label htmlFor="lastName">Last name</label>
-                                <input type="text" className="form-control" id="lastName" placeholder="Brown" value="" required=""/>
-                                <div className="invalid-feedback">
-                                    Valid last name is required.
-                                </div>
-                            </div>
+                <div className="box-2">
+                    <div className="box-inner-2">
+                        <div>
+                            <p className="fw-bold">Payment Details</p>
+                            <p className="dis mb-3">Complete your purchase by providing your payment details</p>
                         </div>
-
-                        <div className="mb-3">
-                            <label htmlFor="address">Address</label>
-                            <input type="text" className="form-control" id="address" placeholder="1234 Main St" required=""/>
-                            <div className="invalid-feedback">
-                                Please enter your shipping address.
+                        <form action="">
+                            <div className="mb-3">
+                                <p className="dis fw-bold mb-2">Email address</p>
+                                <input className="form-control" type="email" placeholder="example@gmail.com"/>
                             </div>
-                        </div>
+                            <div>
+                                <p className="dis fw-bold mb-2">Card details And Expiry Date </p>
+                                <div className="d-flex align-items-center justify-content-between card-atm border rounded">
+                                    <div className="fab fa-cc-visa ps-3"></div>
+                                    <input type="number" className="form-control" placeholder="Card Details"/>
+                                    <div className="d-flex w-50">
+                                        <input type="month" className="form-control px-0" placeholder="MM/YY"/>
+                                    </div>
+                                </div>
 
-                        <div className="mb-3">
-                            <label htmlFor="address2">Address 2 <span className="text-muted">(Optional)</span></label>
-                            <input type="text" className="form-control" id="address2" placeholder="Apartment or suite"/>
-                        </div>
+                                <div className="my-3 cardname">
+                                    <p className="dis fw-bold mb-2">CCV</p>
+                                    <input type="number" maxLength={3} className="form-control px-2" placeholder="123"/>
+                                </div>
 
-                        <div className="row">
-                            <div className="col-md-5 mb-3">
-                                <label htmlFor="country">Country</label>
-                                <select className="form-select d-block w-100" id="country" required="">
-                                    <option value="">Choose...</option>
-                                    <option>Jamaica</option>
-
-                                </select>
-                                <div className="invalid-feedback">
-                                    Please select a valid country.
+                                <div className="my-3 cardname">
+                                    <p className="dis fw-bold mb-2">Cardholder name</p>
+                                    <input className="form-control" type="text" placeholder="John Brown"/>
+                                </div>
+                                <div className="address">
+                                    <p className="dis fw-bold mb-3">Billing address</p>
+                                    <select className="form-select" aria-label="Default select example">
+                                        <option value="0">Select Your Country</option>
+                                        <option value="1">Jamaica</option>
+                                        <option value="2">United States Of America</option>
+                                        <option value="3">Canada</option>
+                                        <option value="4">United Kingdom</option>
+                                        <option value="5">Other</option>
+                                    </select>
+                                    <div className="d-flex">
+                                        <input className="form-control zip" type="text" placeholder="ZIP"/>
+                                        <input className="form-control state" type="text" placeholder="State"/>
+                                    </div>
+                                    
+                                    <br/>
+                                    <div className="d-flex flex-column dis">
+                                        <div className="d-flex align-items-center justify-content-between mb-2">
+                                            <p>Subtotal</p>
+                                            <p><span className="fas fa-dollar-sign"></span>3000.00</p>
+                                        </div>
+                                        <div className="d-flex align-items-center justify-content-between mb-2">
+                                            <p>Tax<span>(5%)</span></p>
+                                            <p><span className="fas fa-dollar-sign"></span>200.80</p>
+                                        </div>
+                                        <div className="d-flex align-items-center justify-content-between mb-2">
+                                            <p className="fw-bold">Total</p>
+                                            <p className="fw-bold"><span className="fas fa-dollar-sign"></span>3200.80</p>
+                                        </div>
+                                        <div className="btn btn-primary mt-2">Pay <span className="fas fa-dollar-sign px-1"></span>3200.80
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="col-md-4 mb-3">
-                                <label htmlFor="state">Parish</label>
-                                <select className="form-select d-block w-100" id="state" required="">
-                                    <option value="">Choose...</option>
-                                    <option value="13">Clarendon </option>
-                                    <option value="09">Hanover </option>
-                                    <option value="01">Kingston </option>
-                                    <option value="12">Manchester </option>
-                                    <option value="04">Portland </option>
-                                    <option value="02">Saint Andrew</option>
-                                    <option value="06">Saint Ann </option>
-                                    <option value="14">Saint Catherine </option>
-                                    <option value="11">Saint Elizabeth </option>
-                                    <option value="08">Saint James </option>
-                                    <option value="05">Saint Mary </option>
-                                    <option value="03">Saint Thomas </option>
-                                    <option value="07">Trelawny </option>
-                                    <option value="10">Westmoreland </option>
-                                </select>
-                                <div className="invalid-feedback">
-                                    Please provide a valid state.
-                                </div>
-                            </div>
-                            <div className="col-md-3 mb-3">
-                                <label htmlFor="zip">Zip</label>
-                                <input type="text" className="form-control" id="zip" placeholder="" required=""/>
-                                <div className="invalid-feedback">
-                                    Zip code required.
-                                </div>
-                            </div>
-                        </div>
-                        <hr className="mb-4"/>
-                        <div className="d-flex justify-content-center">
-                            <div className="form-check mx-4">
-                                <input id="pick-up" name="eat-method" type="radio" className="form-check-input" checked="" required=""/>
-                                <label className="form-check-label" htmlFor="pick-up"><i className="fa-solid fa-bag-shopping" style={{color: "#000000"}}></i> Pick-Up</label>
-                            </div>
-                            <div className="form-check mx-4">
-                                <input id="dine-in" name="eat-method" type="radio" className="form-check-input" required=""/>
-                                <label className="form-check-label" htmlFor="dine-in"><i className="fa-solid fa-utensils" style={{color: "#000000"}}></i> Dine In </label>
-                            </div>
-                            <div className="form-check mx-4">
-                                <input id="delivery" name="eat-method" type="radio" className="form-check-input" required=""/>
-                                <label className="form-check-label" htmlFor="delivery"><i className="fa-solid fa-car-side" style={{color: "#000000"}}></i> Delievery</label>
-                            </div>
-                        </div>
-                        <hr className="mb-4"/>
-
-                        <h4 className="mb-3">Payment</h4>
-
-                    
-                        <div className="row">
-                            <div className="col-md-6 mb-3">
-                                <label htmlFor="cc-name">Name on card</label>
-                                <input type="text" className="form-control" id="cc-name" placeholder="John Brown" required=""/>
-                                <small className="text-muted">Full name as displayed on card</small>
-                                <div className="invalid-feedback">
-                                    Name on card is required
-                                </div>
-                            </div>
-                            <div className="col-md-6 mb-3">
-                                <label htmlFor="cc-number">Card Number</label>
-                                <input type="number" className="form-control" id="cc-number" placeholder="XXXX XXXX XXXX XXXX" required=""/>
-                                <div className="invalid-feedback">
-                                    Card number is required
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-md-6 mb-6">
-                                <label htmlFor="cc-expiration">Expiration</label>
-                                <input type="month" className="form-control" id="cc-expiration" placeholder="" required=""/>
-                                <div className="invalid-feedback">
-                                    Expiration date required
-                                </div>
-                            </div>
-                            <div className="col-md-6 mb-6">
-                                <label htmlFor="cc-expiration">CVV</label>
-                                <input type="number" className="form-control" id="cc-cvv" placeholder="123" required=""/>
-                                <div className="invalid-feedback">
-                                    Security code required
-                                </div>
-                            </div>
-                        </div>
-
-                        <hr className="mb-4"/>
-                        <button className="btn btn-primary btn-lg w-100" type="submit">Continue to checkout</button>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 

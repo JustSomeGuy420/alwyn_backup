@@ -47,7 +47,7 @@ const SignUp = () => {
                                 Password
                             </label>
                         </div>
-                        <button type="submit" className="btn btn-primary w-100 my-2">Create Account</button>
+                        <button type="submit" className="btn create_account_button w-100 my-2">Create Account</button>
                         <div className="mb-3 text-center">
                             Already have an Account?<Link to="signin.html" className="ms-1">Sign In</Link>
                         </div>

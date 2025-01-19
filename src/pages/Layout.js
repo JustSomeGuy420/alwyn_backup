@@ -6,28 +6,28 @@ import logo from '../images/logo.png';
 const Layout = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+      <nav className="mynavbar navbar navbar-expand-lg sticky-top">
         <div className="container-fluid">
           <Link to="/" className="navbar-brand">
-            <img src={logo} alt="Logo" width="30" height="30" className="d-inline-block align-text-top"/>
+            <img src={logo} alt="Logo" width="50" height="50" className="d-inline-block"/>
             Resturant Name
           </Link>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button className="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link to="/" className="nav-link active" aria-current="page">Menu</Link>
+                <Link to="/" className="nav-link my-nav-link">Menu</Link>
               </li>
               <li className="nav-item">
-                <Link to="/checkout" className="nav-link">View Order</Link>
+                <Link to="/checkout" className="nav-link my-nav-link">View Order</Link>
               </li>
               <li className="nav-item">
-                <Link to="/reservation" className="nav-link">Reservation</Link>
+                <Link to="/reservation" className="nav-link my-nav-link">Reservation</Link>
               </li>
               <li className="nav-item">
-                <Link to="/signin" className="nav-link">Sign In</Link>
+                <Link to="/signin" className="nav-link my-nav-link">Sign In</Link>
               </li>
             </ul>
           </div>

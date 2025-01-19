@@ -26,7 +26,7 @@ const Home = () => {
     return (
         <>
             <div id="carouselBanner" className="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
-                <div className="carousel-inner">
+                <div className="carousel-inner" style={{height: "500px"}}>
                     <div className="carousel-item active">
                         <img src={banner1} className="d-block w-100" alt="..." style={{height: "500px"}}/>
                         <div className="carousel-caption d-none d-md-block">
@@ -52,23 +52,23 @@ const Home = () => {
             </div>
 
             <div className="p-3">
-                <div className="text-center">
-                    <h1>Menu</h1>
+                <div className="menu-title text-center">
+                    <p>Menu</p>
                 </div>
                 <div className="card text-center">
                     <div className="card-header">
-                        <ul className="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                        <ul className="my-sub-nav nav nav-pills nav-fill" id="myTab" role="tablist">
                             <li className="nav-item" role="presentation">
-                                <button className="nav-link active" id="special-tab" data-bs-toggle="tab" data-bs-target="#special-tab-pane" type="button" role="tab" aria-controls="special-tab-pane" aria-selected="true">Today's Special</button>
+                                <button className="nav-link mytab active" id="special-tab" data-bs-toggle="tab" data-bs-target="#special-tab-pane" type="button" role="tab" aria-controls="special-tab-pane" aria-selected="true">Today's Special</button>
                             </li>
                             <li className="nav-item" role="presentation">
-                                <button className="nav-link" id="main-tab" data-bs-toggle="tab" data-bs-target="#main-tab-pane" type="button" role="tab" aria-controls="main-tab-pane" aria-selected="false">Main Dishes</button>
+                                <button className="nav-link mytab" id="main-tab" data-bs-toggle="tab" data-bs-target="#main-tab-pane" type="button" role="tab" aria-controls="main-tab-pane" aria-selected="false">Main Dishes</button>
                             </li>
                             <li className="nav-item" role="presentation">
-                                <button className="nav-link" id="side-tab" data-bs-toggle="tab" data-bs-target="#side-tab-pane" type="button" role="tab" aria-controls="side-tab-pane" aria-selected="false">Side Dishes</button>
+                                <button className="nav-link mytab" id="side-tab" data-bs-toggle="tab" data-bs-target="#side-tab-pane" type="button" role="tab" aria-controls="side-tab-pane" aria-selected="false">Side Dishes</button>
                             </li>
                             <li className="nav-item" role="presentation">
-                                <button className="nav-link" id="beverage-tab" data-bs-toggle="tab" data-bs-target="#beverage-tab-pane" type="button" role="tab" aria-controls="beverage-tab-pane" aria-selected="false">Beverages</button>
+                                <button className="nav-link mytab" id="beverage-tab" data-bs-toggle="tab" data-bs-target="#beverage-tab-pane" type="button" role="tab" aria-controls="beverage-tab-pane" aria-selected="false">Beverages</button>
                             </li>
                         </ul>
                     </div>
@@ -82,10 +82,10 @@ const Home = () => {
                                     <h5 className="card-title">Card title</h5>
                                     <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
                                     <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <button className="order-now-btn btn btn-secondary"> Order Now </button>
+                                    <button className="order-now-btn btn btn-secondary"> Order Now <i className="fa-solid fa-cart-arrow-down" style={{color: "#ffffff"}}></i> </button>
                                 </div>
                             </div>                 
-                            <Link to="view_order.html" className="btn btn-primary">Go To Checkout</Link>
+                            <Link to="view_order.html" className="btn btn-checkout"><i className="fa-solid fa-cart-shopping" style={{color: "#ffffff"}}></i>Go To Checkout</Link>
                         </div>
                         <div className="card-body tab-pane fade" id="main-tab-pane" role="tabpanel" aria-labelledby="main-tab" tabIndex="0">
                             <h3 className="card-title">Main Dishes</h3>
@@ -97,7 +97,7 @@ const Home = () => {
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <button className="order-now-btn btn btn-secondary"> Order Now </button>
+                                            <button className="order-now-btn btn btn-secondary"> Order Now <i className="fa-solid fa-cart-arrow-down" style={{color: "#ffffff"}}></i> </button>
                                         </div>
                                     </div>
                                 </div>
@@ -108,7 +108,7 @@ const Home = () => {
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <button className="order-now-btn btn btn-secondary"> Order Now </button>
+                                            <button className="order-now-btn btn btn-secondary"> Order Now <i className="fa-solid fa-cart-arrow-down" style={{color: "#ffffff"}}></i> </button>
                                         </div>
                                     </div>
                                 </div>
@@ -119,7 +119,7 @@ const Home = () => {
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <button className="order-now-btn btn btn-secondary"> Order Now </button>
+                                            <button className="order-now-btn btn btn-secondary"> Order Now <i className="fa-solid fa-cart-arrow-down" style={{color: "#ffffff"}}></i> </button>
                                         </div>
                                     </div>
                                 </div>
@@ -130,7 +130,7 @@ const Home = () => {
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <button className="order-now-btn btn btn-secondary"> Order Now </button>
+                                            <button className="order-now-btn btn btn-secondary"> Order Now <i className="fa-solid fa-cart-arrow-down" style={{color: "#ffffff"}}></i> </button>
                                         </div>
                                     </div>
                                 </div>
@@ -141,7 +141,7 @@ const Home = () => {
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <button className="order-now-btn btn btn-secondary"> Order Now </button>
+                                            <button className="order-now-btn btn btn-secondary"> Order Now <i className="fa-solid fa-cart-arrow-down" style={{color: "#ffffff"}}></i> </button>
                                         </div>
                                     </div>
                                 </div>
@@ -152,12 +152,12 @@ const Home = () => {
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <button className="order-now-btn btn btn-secondary"> Order Now </button>
+                                            <button className="order-now-btn btn btn-secondary"> Order Now <i className="fa-solid fa-cart-arrow-down" style={{color: "#ffffff"}}></i> </button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <Link to="view_order.html" className="btn btn-primary">Go To Checkout</Link>
+                            <Link to="view_order.html" className="btn btn-checkout"><i className="fa-solid fa-cart-shopping" style={{color: "#ffffff"}}></i>Go To Checkout</Link>
                         </div>
                         <div className="card-body tab-pane fade" id="side-tab-pane" role="tabpanel" aria-labelledby="side-tab" tabIndex="0">
                             <h3 className="card-title">Side Dishes</h3>
@@ -169,7 +169,7 @@ const Home = () => {
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <button className="order-now-btn btn btn-secondary"> Order Now </button>
+                                            <button className="order-now-btn btn btn-secondary"> Order Now <i className="fa-solid fa-cart-arrow-down" style={{color: "#ffffff"}}></i> </button>
                                         </div>
                                     </div>
                                 </div>
@@ -180,7 +180,7 @@ const Home = () => {
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <button className="order-now-btn btn btn-secondary"> Order Now </button>
+                                            <button className="order-now-btn btn btn-secondary"> Order Now <i className="fa-solid fa-cart-arrow-down" style={{color: "#ffffff"}}></i> </button>
                                         </div>
                                     </div>
                                 </div>
@@ -191,7 +191,7 @@ const Home = () => {
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <button className="order-now-btn btn btn-secondary"> Order Now </button>
+                                            <button className="order-now-btn btn btn-secondary"> Order Now <i className="fa-solid fa-cart-arrow-down" style={{color: "#ffffff"}}></i> </button>
                                         </div>
                                     </div>
                                 </div>
@@ -202,7 +202,7 @@ const Home = () => {
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <button className="order-now-btn btn btn-secondary"> Order Now </button>
+                                            <button className="order-now-btn btn btn-secondary"> Order Now <i className="fa-solid fa-cart-arrow-down" style={{color: "#ffffff"}}></i> </button>
                                         </div>
                                     </div>
                                 </div>
@@ -213,7 +213,7 @@ const Home = () => {
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <button className="order-now-btn btn btn-secondary"> Order Now </button>
+                                            <button className="order-now-btn btn btn-secondary"> Order Now <i className="fa-solid fa-cart-arrow-down" style={{color: "#ffffff"}}></i> </button>
                                         </div>
                                     </div>
                                 </div>
@@ -224,12 +224,12 @@ const Home = () => {
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <button className="order-now-btn btn btn-secondary"> Order Now </button>
+                                            <button className="order-now-btn btn btn-secondary"> Order Now <i className="fa-solid fa-cart-arrow-down" style={{color: "#ffffff"}}></i> </button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <Link to="view_order.html" className="btn btn-primary">Go To Checkout</Link>
+                            <Link to="view_order.html" className="btn btn-checkout"><i className="fa-solid fa-cart-shopping" style={{color: "#ffffff"}}></i>Go To Checkout</Link>
                         </div>
                         <div className="card-body tab-pane fade" id="beverage-tab-pane" role="tabpanel" aria-labelledby="beverage-tab" tabIndex="0">
                             <h3 className="card-title">Beverages</h3>
@@ -241,7 +241,7 @@ const Home = () => {
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <button className="order-now-btn btn btn-secondary"> Order Now </button>
+                                            <button className="order-now-btn btn btn-secondary"> Order Now <i className="fa-solid fa-cart-arrow-down" style={{color: "#ffffff"}}></i> </button>
                                         </div>
                                     </div>
                                 </div>
@@ -252,7 +252,7 @@ const Home = () => {
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <button className="order-now-btn btn btn-secondary"> Order Now </button>
+                                            <button className="order-now-btn btn btn-secondary"> Order Now <i className="fa-solid fa-cart-arrow-down" style={{color: "#ffffff"}}></i> </button>
                                         </div>
                                     </div>
                                 </div>
@@ -263,7 +263,7 @@ const Home = () => {
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <button className="order-now-btn btn btn-secondary"> Order Now </button>
+                                            <button className="order-now-btn btn btn-secondary"> Order Now <i className="fa-solid fa-cart-arrow-down" style={{color: "#ffffff"}}></i> </button>
                                         </div>
                                     </div>
                                 </div>
@@ -274,7 +274,7 @@ const Home = () => {
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <button className="order-now-btn btn btn-secondary"> Order Now </button>
+                                            <button className="order-now-btn btn btn-secondary"> Order Now <i className="fa-solid fa-cart-arrow-down" style={{color: "#ffffff"}}></i> </button>
                                         </div>
                                     </div>
                                 </div>
@@ -285,7 +285,7 @@ const Home = () => {
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <button className="order-now-btn btn btn-secondary"> Order Now </button>
+                                            <button className="order-now-btn btn btn-secondary"> Order Now <i className="fa-solid fa-cart-arrow-down" style={{color: "#ffffff"}}></i> </button>
                                         </div>
                                     </div>
                                 </div>
@@ -296,12 +296,12 @@ const Home = () => {
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <button className="order-now-btn btn btn-secondary"> Order Now </button>
+                                            <button className="order-now-btn btn btn-secondary"> Order Now <i className="fa-solid fa-cart-arrow-down" style={{color: "#ffffff"}}></i> </button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <Link to="view_order.html" className="btn btn-primary">Go To Checkout</Link>
+                            <Link to="view_order.html" className="btn btn-checkout"><i className="fa-solid fa-cart-shopping" style={{color: "#ffffff"}}></i>Go To Checkout</Link>
                         </div>
                     </div>
                 </div>
