@@ -4,6 +4,7 @@ import './form-validation.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
+import Order from "./pages/Order";
 import Checkout from "./pages/Checkout";
 import Reservation from "./pages/Reservation";
 import SignIn from "./pages/SignIn";
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="order" element={<Order />} />
           <Route path="checkout" element={<Checkout />} />
           <Route path="reservation" element={<Reservation />} />
           <Route path="signin" element={<SignIn />} />

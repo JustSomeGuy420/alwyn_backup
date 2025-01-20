@@ -59,16 +59,16 @@ const Home = () => {
                     <div className="card-header">
                         <ul className="my-sub-nav nav nav-pills nav-fill" id="myTab" role="tablist">
                             <li className="nav-item" role="presentation">
-                                <button className="nav-link mytab active" id="special-tab" data-bs-toggle="tab" data-bs-target="#special-tab-pane" type="button" role="tab" aria-controls="special-tab-pane" aria-selected="true">Today's Special</button>
+                                <button className="nav-link mytab active" id="special-tab" data-bs-toggle="tab" style={{borderRadius: "0"}} data-bs-target="#special-tab-pane" type="button" role="tab" aria-controls="special-tab-pane" aria-selected="true">Today's Special</button>
                             </li>
                             <li className="nav-item" role="presentation">
-                                <button className="nav-link mytab" id="main-tab" data-bs-toggle="tab" data-bs-target="#main-tab-pane" type="button" role="tab" aria-controls="main-tab-pane" aria-selected="false">Main Dishes</button>
+                                <button className="nav-link mytab" id="main-tab" data-bs-toggle="tab" style={{borderRadius: "0"}} data-bs-target="#main-tab-pane" type="button" role="tab" aria-controls="main-tab-pane" aria-selected="false">Main Dishes</button>
                             </li>
                             <li className="nav-item" role="presentation">
-                                <button className="nav-link mytab" id="side-tab" data-bs-toggle="tab" data-bs-target="#side-tab-pane" type="button" role="tab" aria-controls="side-tab-pane" aria-selected="false">Side Dishes</button>
+                                <button className="nav-link mytab" id="side-tab" data-bs-toggle="tab" style={{borderRadius: "0"}} data-bs-target="#side-tab-pane" type="button" role="tab" aria-controls="side-tab-pane" aria-selected="false">Side Dishes</button>
                             </li>
                             <li className="nav-item" role="presentation">
-                                <button className="nav-link mytab" id="beverage-tab" data-bs-toggle="tab" data-bs-target="#beverage-tab-pane" type="button" role="tab" aria-controls="beverage-tab-pane" aria-selected="false">Beverages</button>
+                                <button className="nav-link mytab" id="beverage-tab" data-bs-toggle="tab" style={{borderRadius: "0"}} data-bs-target="#beverage-tab-pane" type="button" role="tab" aria-controls="beverage-tab-pane" aria-selected="false">Beverages</button>
                             </li>
                         </ul>
                     </div>
@@ -76,8 +76,8 @@ const Home = () => {
                         <div className="card-body tab-pane fade show active" id="special-tab-pane" role="tabpanel" aria-labelledby="special-tab" tabIndex="0">
                             <h3 className="card-title">Today's Special</h3>
                             <br/>
-                            <div className="card mb-3 mx-auto" style={{width: "32rem"}}>
-                                <img src={special} className="card-img-top" alt="..."/>
+                            <div className="card mb-3 mx-auto" style={{width: "32rem", border: "0"}}>
+                                <img src={special} className="card-img-top mx-auto" alt="..."/>
                                 <div className="card-body">
                                     <h5 className="card-title">Card title</h5>
                                     <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
@@ -91,8 +91,8 @@ const Home = () => {
                             <h3 className="card-title">Main Dishes</h3>
                             <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 p-3">
                                 <div className="col mb-4 " >
-                                    <div className="card">
-                                        <img src={main1} className="card-img-top" alt="..." style={{height: "300px"}}/>
+                                    <div className="card p-3" style={{border: "0"}}>
+                                        <img src={main1} className="card-img-top mx-auto" alt="..." style={{height: "300px"}}/>
                                         <div className="card-body">
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
@@ -102,8 +102,8 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div className="col mb-4">
-                                    <div className="card">
-                                        <img src={main2} className="card-img-top" alt="..." style={{height: "300px"}}/>
+                                    <div className="card p-3" style={{border: "0"}}>
+                                        <img src={main2} className="card-img-top mx-auto" alt="..." style={{height: "300px"}}/>
                                         <div className="card-body">
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
@@ -113,8 +113,8 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div className="col mb-4">
-                                    <div className="card">
-                                        <img src={main3} className="card-img-top" alt="..." style={{height: "300px"}}/>
+                                    <div className="card p-3" style={{border: "0"}}>
+                                        <img src={main3} className="card-img-top mx-auto" alt="..." style={{height: "300px"}}/>
                                         <div className="card-body">
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
@@ -124,8 +124,8 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div className="col mb-4">
-                                    <div className="card">
-                                        <img src={main4} className="card-img-top" alt="..." style={{height: "300px"}}/>
+                                    <div className="card p-3" style={{border: "0"}}>
+                                        <img src={main4} className="card-img-top mx-auto" alt="..." style={{height: "300px"}}/>
                                         <div className="card-body">
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
@@ -135,8 +135,8 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div className="col mb-4">
-                                    <div className="card">
-                                        <img src={main5} className="card-img-top" alt="..." style={{height: "300px"}}/>
+                                    <div className="card p-3" style={{border: "0"}}>
+                                        <img src={main5} className="card-img-top mx-auto" alt="..." style={{height: "300px"}}/>
                                         <div className="card-body">
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
@@ -146,8 +146,8 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div className="col mb-4">
-                                    <div className="card">
-                                        <img src={main6} className="card-img-top" alt="..." style={{height: "300px"}}/>
+                                    <div className="card p-3" style={{border: "0"}}>
+                                        <img src={main6} className="card-img-top mx-auto" alt="..." style={{height: "300px"}}/>
                                         <div className="card-body">
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
@@ -163,8 +163,8 @@ const Home = () => {
                             <h3 className="card-title">Side Dishes</h3>
                             <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 p-3">
                                 <div className="col mb-4">
-                                    <div className="card">
-                                        <img src={side1} className="card-img-top" alt="..." style={{height: "300px"}}/>
+                                    <div className="card p-3" style={{border: "0"}}>
+                                        <img src={side1} className="card-img-top mx-auto" alt="..." style={{height: "300px"}}/>
                                         <div className="card-body">
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
@@ -174,8 +174,8 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div className="col mb-4">
-                                    <div className="card">
-                                        <img src={side2} className="card-img-top" alt="..." style={{height: "300px"}}/>
+                                    <div className="card p-3" style={{border: "0"}}>
+                                        <img src={side2} className="card-img-top mx-auto" alt="..." style={{height: "300px"}}/>
                                         <div className="card-body">
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
@@ -185,8 +185,8 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div className="col mb-4">
-                                    <div className="card">
-                                        <img src={side3} className="card-img-top" alt="..." style={{height: "300px"}}/>
+                                    <div className="card p-3" style={{border: "0"}}>
+                                        <img src={side3} className="card-img-top mx-auto" alt="..." style={{height: "300px"}}/>
                                         <div className="card-body">
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
@@ -196,8 +196,8 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div className="col mb-4">
-                                    <div className="card">
-                                        <img src={side4} className="card-img-top" alt="..." style={{height: "300px"}}/>
+                                    <div className="card p-3" style={{border: "0"}}>
+                                        <img src={side4} className="card-img-top mx-auto" alt="..." style={{height: "300px"}}/>
                                         <div className="card-body">
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
@@ -207,8 +207,8 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div className="col mb-4">
-                                    <div className="card">
-                                        <img src={side5} className="card-img-top" alt="..." style={{height: "300px"}}/>
+                                    <div className="card p-3" style={{border: "0"}}>
+                                        <img src={side5} className="card-img-top mx-auto" alt="..." style={{height: "300px"}}/>
                                         <div className="card-body">
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
@@ -218,8 +218,8 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div className="col mb-4">
-                                    <div className="card">
-                                        <img src={side6} className="card-img-top" alt="..." style={{height: "300px"}}/>
+                                    <div className="card p-3" style={{border: "0"}}>
+                                        <img src={side6} className="card-img-top mx-auto" alt="..." style={{height: "300px"}}/>
                                         <div className="card-body">
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
@@ -235,8 +235,8 @@ const Home = () => {
                             <h3 className="card-title">Beverages</h3>
                             <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 p-3">
                                 <div className="col mb-4">
-                                    <div className="card">
-                                        <img src={drink1} className="card-img-top" alt="..." style={{height: "300px"}}/>
+                                    <div className="card p-3" style={{border: "0"}}>
+                                        <img src={drink1} className="card-img-top mx-auto" alt="..." style={{height: "300px"}}/>
                                         <div className="card-body">
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
@@ -246,8 +246,8 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div className="col mb-4">
-                                    <div className="card">
-                                        <img src={drink2} className="card-img-top" alt="..." style={{height: "300px"}}/>
+                                    <div className="card p-3" style={{border: "0"}}>
+                                        <img src={drink2} className="card-img-top mx-auto" alt="..." style={{height: "300px"}}/>
                                         <div className="card-body">
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
@@ -257,8 +257,8 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div className="col mb-4">
-                                    <div className="card">
-                                        <img src={drink3} className="card-img-top" alt="..." style={{height: "300px"}}/>
+                                    <div className="card p-3" style={{border: "0"}}>
+                                        <img src={drink3} className="card-img-top mx-auto" alt="..." style={{height: "300px"}}/>
                                         <div className="card-body">
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
@@ -268,8 +268,8 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div className="col mb-4">
-                                    <div className="card">
-                                        <img src={drink4} className="card-img-top" alt="..." style={{height: "300px"}}/>
+                                    <div className="card p-3" style={{border: "0"}}>
+                                        <img src={drink4} className="card-img-top mx-auto" alt="..." style={{height: "300px"}}/>
                                         <div className="card-body">
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
@@ -279,8 +279,8 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div className="col mb-4">
-                                    <div className="card">
-                                        <img src={drink5} className="card-img-top" alt="..." style={{height: "300px"}}/>
+                                    <div className="card p-3" style={{border: "0"}}>
+                                        <img src={drink5} className="card-img-top mx-auto" alt="..." style={{height: "300px"}}/>
                                         <div className="card-body">
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>
@@ -290,8 +290,8 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div className="col mb-4">
-                                    <div className="card">
-                                        <img src={drink6} className="card-img-top" alt="..." style={{height: "300px"}}/>
+                                    <div className="card p-3" style={{border: "0"}}>
+                                        <img src={drink6} className="card-img-top mx-auto" alt="..." style={{height: "300px"}}/>
                                         <div className="card-body">
                                             <h5 className="card-title">Card title</h5>
                                             <h6 className="card-subtitle mb-2 text-body-secondary"> $1000.00 </h6>

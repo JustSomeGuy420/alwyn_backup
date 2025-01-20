@@ -21,7 +21,7 @@ const Layout = () => {
                 <Link to="/" className="nav-link my-nav-link">Menu</Link>
               </li>
               <li className="nav-item">
-                <Link to="/checkout" className="nav-link my-nav-link">View Order</Link>
+                <Link to="/order" className="nav-link my-nav-link">View Order</Link>
               </li>
               <li className="nav-item">
                 <Link to="/reservation" className="nav-link my-nav-link">Reservation</Link>
